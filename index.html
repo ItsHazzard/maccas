@@ -19,7 +19,7 @@
         }
 
         header {
-            background-color: #ffcc00;
+            background-color: #fcd116; /* McDonald's yellow */
             padding: 20px;
             text-align: center;
         }
@@ -27,6 +27,7 @@
         header h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            color: #d20c0c; /* McDonald's red */
         }
 
         nav ul {
@@ -40,7 +41,8 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: #d20c0c; /* McDonald's red */
+            font-weight: bold;
         }
 
         section {
@@ -52,6 +54,7 @@
         section h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
+            color: #d20c0c; /* McDonald's red */
         }
 
         .download-links {
@@ -62,9 +65,18 @@
 
         .download-links a {
             text-decoration: none;
-            color: #333;
+            color: #d20c0c; /* McDonald's red */
             display: inline-block;
             margin: 0 10px;
+            border: 2px solid #d20c0c; /* McDonald's red */
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .download-links a:hover {
+            background-color: #d20c0c; /* McDonald's red */
+            color: #fff;
         }
 
         .download-links img {
@@ -74,7 +86,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #d20c0c; /* McDonald's red */
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -109,11 +121,11 @@
         <h2>Download the Game</h2>
         <p>Choose your operating system:</p>
         <div class="download-links">
-            <a href="McDonald.app">
+            <a href="download/mcdonalds_game_mac.zip">
                 <img src="images/apple-icon.png" alt="Mac Icon">
                 <span>Download for Mac</span>
             </a>
-            <a href="McDonalds.exe">
+            <a href="download/mcdonalds_game_windows.zip">
                 <img src="images/windows-icon.png" alt="Windows Icon">
                 <span>Download for Windows</span>
             </a>

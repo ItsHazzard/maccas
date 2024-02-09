@@ -32,6 +32,7 @@
 
         nav ul {
             list-style: none;
+            margin-top: 20px; /* Add some spacing */
         }
 
         nav ul li {
@@ -49,11 +50,12 @@
             padding: 20px;
             background-color: #fff;
             margin-bottom: 20px;
+            text-align: center; /* Center content */
         }
 
         section h2 {
             font-size: 1.5em;
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* Add more spacing */
             color: #d20c0c; /* McDonald's red */
         }
 
@@ -67,15 +69,11 @@
             text-decoration: none;
             color: #d20c0c; /* McDonald's red */
             display: inline-block;
-            margin: 0 10px;
-            border: 2px solid #d20c0c; /* McDonald's red */
-            padding: 10px 20px;
-            border-radius: 5px;
+            margin: 0 20px; /* Add more spacing */
             transition: all 0.3s ease;
         }
 
         .download-links a:hover {
-            background-color: #d20c0c; /* McDonald's red */
             color: #fff;
         }
 
@@ -109,7 +107,7 @@
         <h2>About the Game</h2>
         <p>Welcome to the McDonald's Game! This is an exciting game where you can manage your own McDonald's restaurant, serving customers, managing staff, and growing your business.</p>
         <p>Features:</p>
-        <ul>
+        <ul style="margin: 0 auto; width: fit-content;"> <!-- Center the list -->
             <li>Manage your own McDonald's restaurant</li>
             <li>Hire and train staff</li>
             <li>Design your restaurant layout</li>
@@ -122,11 +120,11 @@
         <p>Choose your operating system:</p>
         <div class="download-links">
             <a href="download/mcdonalds_game_mac.zip">
-                <img src="images/apple-icon.png" alt="Mac">
+                <i class="fa fa-apple fa-3x"></i> <!-- Font Awesome icon for Mac -->
                 <span>Download for Mac</span>
             </a>
-            <a href="McDonalds.exe">
-                <img src="images/windows-icon.png" alt="Win">
+            <a href="download/mcdonalds_game_windows.zip">
+                <i class="fa fa-windows fa-3x"></i> <!-- Font Awesome icon for Windows -->
                 <span>Download for Windows</span>
             </a>
         </div>
@@ -135,11 +133,14 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>If you have any questions or feedback, feel free to contact us:</p>
-        <p>Email: FairbairnJ2029@hvgs.nsw.edu.au</p>
+        <p>Email: <a href="mailto:FairbairnJ2029@hvgs.nsw.edu.au">FairbairnJ2029@hvgs.nsw.edu.au</a></p> <!-- Make email clickable -->
     </section>
 
     <footer>
         <p>&copy; 2024 McDonald's Game. All rights reserved.</p>
     </footer>
+
+    <!-- Add Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

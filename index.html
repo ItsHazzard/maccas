@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McDonald's Game</title>
-    <link rel="icon" href="maccas.png" type="image/png">
     <style>
         /* Basic Reset */
         * {
@@ -28,6 +27,7 @@
         header h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            font-family: 'McDonald'; /* Apply custom font */
             color: #d20c0c; /* McDonald's red */
         }
 
@@ -80,7 +80,6 @@
         .download-links a:hover {
             background-color: #999; /* Darker gray on hover */
             color: #fff; /* White text on hover */
-            transform: scale(1.1); 
         }
 
         .download-links img {
@@ -95,11 +94,18 @@
             text-align: center;
             padding: 20px;
         }
+
+        @font-face {
+            font-family: 'McDonald';
+            src: url('mcdonald.woff2') format('woff2'), /* Modern Browsers */
+                 url('mcdonald.woff') format('woff'), /* Modern Browsers */
+                 url('mcdonald.ttf') format('truetype'); /* IE 9+, Safari 6+ */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>McDonald's Game</h1>
+        <h1><span style="font-family: 'mcdonald';">M</span>cDonald's Game</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -115,9 +121,9 @@
         <p>Features:</p>
         <ul style="margin: 0 auto; width: fit-content;"> <!-- Center the list -->
             <li>Manage your own McDonald's restaurant</li>
-            <li>Hire, FIRE and Award staff</li>
-            <li>Put Hormones in Your Cattle</li>
-            <li>Bribe Politician, Climatologist, Health Officer and Neurologist</li>
+            <li>Hire and train staff</li>
+            <li>Design your restaurant layout</li>
+            <li>Expand your franchise</li>
         </ul>
     </section>
 
@@ -129,7 +135,7 @@
                 <i class="fab fa-apple fa-3x"></i> <!-- Font Awesome icon for Mac -->
                 <span>Download for Mac</span>
             </a>
-            <a href="McDonalds.exe">
+            <a href="download/mcdonalds_game_windows.zip">
                 <i class="fab fa-windows fa-3x"></i> <!-- Font Awesome icon for Windows -->
                 <span>Download for Windows</span>
             </a>
